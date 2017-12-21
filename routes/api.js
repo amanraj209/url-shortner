@@ -39,11 +39,11 @@ module.exports = function (app, shortner) {
             }
         });
     });
-    
-    function jsonResponse(res, code, data) {
+
+    function jsonResponse (res, code, data) {
         data = data || {};
         data.status_code = (http.STATUS_CODES[code]) ? code : 503;
-        data.status_text = http.STATUS_CODES[code] || http.STATUS_CODES[503];
+        data.status_txt = http.STATUS_CODES[code] || http.STATUS_CODES[503];
 
         res.status(data.status_code).json(data);
     }
