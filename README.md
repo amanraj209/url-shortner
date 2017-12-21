@@ -20,6 +20,7 @@ url-shortner/
         shortner.js
     public/
     routes/
+        api.js
         index.js
     views/
         error.hbs
