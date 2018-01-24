@@ -27,8 +27,7 @@ var server = http.createServer(app);
  */
 
 server.listen(port, function () {
-    console.log('Express server listening on port http://localhost:8000 in %s mode', app.settings.env
-    );
+    console.log('Express server listening on port http://localhost:8000 in %s mode', app.settings.env);
     console.log('Running on http://localhost:8000 (Press CTRL+C to quit)');
 });
 server.on('error', onError);
